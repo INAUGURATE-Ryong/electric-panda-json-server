@@ -74,7 +74,7 @@ App Machines: shared-cpu-1x, 1GB RAM     (most apps need about 1GB of RAM)
 Postgres:     <none>                     (not requested)
 Redis:        <none>                     (not requested)
 
-? Do you want to tweak these settings before proceeding? Yes
+⚠️ ? Do you want to tweak these settings before proceeding? Yes
 failed opening browser. Copy the url (https://fly.io/cli/launch/2861240a57dd0996bcaa8ec0df568345) into a browser and continue
 Waiting for launch data... Done
 Created app 'electric-panda-json-server' in organization 'personal'
