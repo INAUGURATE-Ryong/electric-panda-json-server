@@ -3,7 +3,7 @@
 ![LGTM](https://i.lgtm.fun/2oph.png)
 
 ### RUN
-```bash
+```sh
 $ npx json-server db.json
 
 JSON Server started on PORT :3000
@@ -49,7 +49,7 @@ CMD ["json-server", "-p", "80", "-w", "/app/db.json"]
 4. 무료 플랜 : https://fly.io/docs/about/pricing/#free-allowances
 5. install cmd - https://fly.io/docs/hands-on/install-flyctl/
  
-```shell
+```sh
 $ tail -n 3 ~/.zshrc
 # fly
 export FLYCTL_INSTALL="~/.fly"
@@ -60,6 +60,34 @@ $ source ~/.zshrc
  
 7. flyctl auth login
 8. flyctl launch 후 y 해서 용량을 256MB로 변경해야함. 그다음도 y하기.
+```sh
+flyctl launch
+Scanning source code
+Detected a Dockerfile app
+Creating app in /home/awya5/code/electric-panda-json-server
+We're about to launch your app on Fly.io. Here's what you're getting:
+
+Organization: Yong Yong                  (fly launch defaults to the personal org)
+Name:         electric-panda-json-server (derived from your directory name)
+Region:       Tokyo, Japan               (this is the fastest region for you)
+App Machines: shared-cpu-1x, 1GB RAM     (most apps need about 1GB of RAM)
+Postgres:     <none>                     (not requested)
+Redis:        <none>                     (not requested)
+
+? Do you want to tweak these settings before proceeding? Yes
+failed opening browser. Copy the url (https://fly.io/cli/launch/2861240a57dd0996bcaa8ec0df568345) into a browser and continue
+Waiting for launch data... Done
+Created app 'electric-panda-json-server' in organization 'personal'
+Admin URL: https://fly.io/apps/electric-panda-json-server
+Hostname: electric-panda-json-server.fly.dev
+? Create .dockerignore from 1 .gitignore files? Yes
+Created /home/awya5/code/electric-panda-json-server/.dockerignore from 1 .gitignore files.
+Wrote config file fly.toml
+Validating /home/awya5/code/electric-panda-json-server/fly.toml
+Platform: machines
+✓ Configuration is valid
+==> Building image
+```
 9. cat fly.toml | grep internal
    internal_port = 80
 10. flyctl deploy
