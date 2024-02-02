@@ -2,7 +2,7 @@
 
 ![LGTM](https://i.lgtm.fun/2oph.png)
 
-###RUN
+### RUN
 ```bash
 $ npx json-server db.json
 
@@ -24,6 +24,6 @@ http://localhost:3000/comments
 http://localhost:3000/profile
 ```
 
-###FROM
+### FROM
 - https://www.npmjs.com/package/json-server?activeTab=readme
 
