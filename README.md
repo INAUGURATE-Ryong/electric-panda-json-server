@@ -23,6 +23,11 @@ http://localhost:3000/posts
 http://localhost:3000/comments
 http://localhost:3000/profile
 ```
+### DEPOY
+```sh
+$ fly deploy
+```
+
 
 ### FROM
 - https://www.npmjs.com/package/json-server?activeTab=readme
